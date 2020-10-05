@@ -24,6 +24,7 @@
 		3A54E169252BDAB1007F3267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A54E16C252BDAB1007F3267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A54E16E252BDAB1007F3267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A54E174252BDB53007F3267 /* blueGuitar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueGuitar2.png; path = ../../blueGuitar2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 				3A54E164252BDAAF007F3267 /* ViewController.swift */,
 				3A54E166252BDAAF007F3267 /* Main.storyboard */,
 				3A54E169252BDAB1007F3267 /* Assets.xcassets */,
+				3A54E174252BDB53007F3267 /* blueGuitar2.png */,
 				3A54E16B252BDAB1007F3267 /* LaunchScreen.storyboard */,
 				3A54E16E252BDAB1007F3267 /* Info.plist */,
 			);
