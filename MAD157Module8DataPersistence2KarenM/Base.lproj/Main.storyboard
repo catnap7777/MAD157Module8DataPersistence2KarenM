@@ -15,9 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2O-5V-VC4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2O-5V-VC4">
                                 <rect key="frame" x="20" y="44" width="87" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="GCW-zt-h7f"/>
+                                    <constraint firstAttribute="height" constant="36" id="brj-Eq-2sZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Write Text">
                                     <color key="titleColor" red="0.11180826276540756" green="0.95061331987380981" blue="0.035833921283483505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -26,9 +29,12 @@
                                     <action selector="writeMyText:" destination="BZM-GV-jgw" eventType="touchUpInside" id="hUR-9w-7Ns"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1p-k9-SvT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1p-k9-SvT">
                                 <rect key="frame" x="308" y="44" width="86" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="679-dg-4Wq"/>
+                                    <constraint firstAttribute="width" constant="86" id="cyl-85-GtS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Read Text">
                                     <color key="titleColor" red="0.11180826276540756" green="0.95061331987380981" blue="0.035833921283483505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,23 +43,32 @@
                                     <action selector="readMyText:" destination="BZM-GV-jgw" eventType="touchUpInside" id="Qht-gl-OPn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueGuitar2.png" translatesAutoresizingMaskIntoConstraints="NO" id="psh-TO-Suo">
-                                <rect key="frame" x="20" y="321" width="374" height="255"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueGuitar2.png" translatesAutoresizingMaskIntoConstraints="NO" id="psh-TO-Suo">
+                                <rect key="frame" x="20" y="285" width="374" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="NEf-jV-gWL"/>
+                                    <constraint firstAttribute="height" constant="255" id="lya-qK-PIc"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TP1-7P-udl">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TP1-7P-udl">
                                 <rect key="frame" x="87" y="133" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="GXD-hY-YWT"/>
+                                    <constraint firstAttribute="width" constant="240" id="aEo-Gr-gSf"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" red="0.017953444272279739" green="0.98074549436569214" blue="0.98581713438034058" alpha="0.99962615966796875" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zdk-rL-Gw3">
-                                <rect key="frame" x="87" y="626" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zdk-rL-Gw3">
+                                <rect key="frame" x="87" y="603" width="240" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Axb-7e-uHQ"/>
+                                    <constraint firstAttribute="height" constant="128" id="OLt-6K-IJJ"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" red="0.97157162427902222" green="0.00022029444517102093" blue="0.99995952844619751" alpha="0.99957275390625" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -61,6 +76,22 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TP1-7P-udl" firstAttribute="top" secondItem="W2O-5V-VC4" secondAttribute="bottom" constant="53" id="51h-zq-aK7"/>
+                            <constraint firstItem="psh-TO-Suo" firstAttribute="top" secondItem="TP1-7P-udl" secondAttribute="bottom" constant="24" id="A1J-Sf-Bkb"/>
+                            <constraint firstItem="W2O-5V-VC4" firstAttribute="top" secondItem="xeR-7h-Hpc" secondAttribute="top" id="AaO-Ta-9fC"/>
+                            <constraint firstItem="Zdk-rL-Gw3" firstAttribute="top" secondItem="psh-TO-Suo" secondAttribute="bottom" constant="63" id="Ckv-G7-Xht"/>
+                            <constraint firstItem="W2O-5V-VC4" firstAttribute="leading" secondItem="xeR-7h-Hpc" secondAttribute="leading" constant="20" id="FBI-X4-x00"/>
+                            <constraint firstItem="Zdk-rL-Gw3" firstAttribute="leading" secondItem="xeR-7h-Hpc" secondAttribute="leading" constant="87" id="Hit-m1-kpc"/>
+                            <constraint firstItem="psh-TO-Suo" firstAttribute="leading" secondItem="xeR-7h-Hpc" secondAttribute="leading" constant="20" id="RrF-mL-evg"/>
+                            <constraint firstItem="z1p-k9-SvT" firstAttribute="top" secondItem="xeR-7h-Hpc" secondAttribute="top" id="Y6A-g0-rMU"/>
+                            <constraint firstItem="xeR-7h-Hpc" firstAttribute="trailing" secondItem="Zdk-rL-Gw3" secondAttribute="trailing" constant="87" id="dGQ-fU-Xes"/>
+                            <constraint firstItem="xeR-7h-Hpc" firstAttribute="trailing" secondItem="z1p-k9-SvT" secondAttribute="trailing" constant="20" id="eEa-yM-U2V"/>
+                            <constraint firstItem="z1p-k9-SvT" firstAttribute="leading" secondItem="W2O-5V-VC4" secondAttribute="trailing" constant="201" id="fOU-QA-ccd"/>
+                            <constraint firstItem="xeR-7h-Hpc" firstAttribute="trailing" secondItem="TP1-7P-udl" secondAttribute="trailing" constant="87" id="fmg-5L-FY2"/>
+                            <constraint firstItem="TP1-7P-udl" firstAttribute="leading" secondItem="xeR-7h-Hpc" secondAttribute="leading" constant="87" id="nkm-wt-pbt"/>
+                            <constraint firstItem="xeR-7h-Hpc" firstAttribute="trailing" secondItem="psh-TO-Suo" secondAttribute="trailing" constant="20" id="wzR-Ta-YEg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xeR-7h-Hpc"/>
                     </view>
                     <connections>
