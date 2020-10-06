@@ -23,12 +23,15 @@ class ViewController: UIViewController {
             print("Error writing file")
         }
         
-        //.. to print out the path of the text file kamfile2020.text
-        //.. from StackOverflow :) https://stackoverflow.com/questions/1676938/easy-way-to-see-saved-nsuserdefaults#:~:text=You%20will%20see%20the%20contents%20in%20your%20Xcode%20editor.&text=Sorted%20by%20most%20recent%20date,file%20in%20the%20plist%20editor.&text=Go%20to%3A%20%2FUsers%2F%7BUser,%7D%2FLibrary%2FContainers%2Fcom.&text=This%20is%20the%20whole%20path,be%20in%20a%20plist%20file.
+        //.. *************************************************************************
+        //.. to print out the path of the textfile... Like from StackOverflow below but
+        //..   with .documentDirectory INSTEAD of .libraryDirectory
+        //..
+        // https://stackoverflow.com/questions/1676938/easy-way-to-see-saved-nsuserdefaults#:~:text=You%20will%20see%20the%20contents%20in%20your%20Xcode%20editor.&text=Sorted%20by%20most%20recent%20date,file%20in%20the%20plist%20editor.&text=Go%20to%3A%20%2FUsers%2F%7BUser,%7D%2FLibrary%2FContainers%2Fcom.&text=This%20is%20the%20whole%20path,be%20in%20a%20plist%20file.
             
-        let path = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let folder = path[0]
-        NSLog("Your text file is stored in this folder: \(folder)/Preferences")
+        NSLog("Your text file is stored in this folder: \(folder)")
             
     }
     
